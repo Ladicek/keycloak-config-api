@@ -29,6 +29,7 @@
 
   <modules>
     <module>client</module>
+    <module>client-saml</module>
     <module>server</module>
   </modules>
 

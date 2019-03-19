@@ -9,7 +9,7 @@
     <version>1.6.6-SNAPSHOT</version>
   </parent>
 
-  <artifactId>keycloak-client-config-api</artifactId>
+  <artifactId>keycloak-client-saml-config-api</artifactId>
 
   <packaging>jar</packaging>
 
@@ -41,7 +41,7 @@
             <configuration>
               <workingDirectory>${jboss.home}</workingDirectory>
               <executable>${jboss.cli.executable}</executable>
-              <arguments>--file=bin/adapter-install-offline.cli</arguments>
+              <arguments>--file=bin/adapter-install-saml-offline.cli</arguments>
               <environmentVariables>
                 <NOPAUSE>true</NOPAUSE>
               </environmentVariables>
@@ -143,7 +143,7 @@
                 </artifactItem>
                 <artifactItem>
                   <groupId>org.keycloak</groupId>
-                  <artifactId>keycloak-wildfly-adapter-dist</artifactId>
+                  <artifactId>keycloak-saml-wildfly-adapter-dist</artifactId>
                   <version>${version.keycloak}</version>
                   <type>zip</type>
                   <overWrite>false</overWrite>
@@ -205,9 +205,9 @@
         <configuration>
           <show>public</show>
           <reportOutputDirectory>${project.reporting.outputDirectory}/${project.version}</reportOutputDirectory>
-          <header>Keycloak Client Configuration API, ${project.version}</header>
-          <footer>Keycloak Client Configuration API, ${project.version}</footer>
-          <doctitle>Keycloak Client Configuration API, ${project.version}</doctitle>
+          <header>Keycloak Client SAML Configuration API, ${project.version}</header>
+          <footer>Keycloak Client SAML Configuration API, ${project.version}</footer>
+          <doctitle>Keycloak Client SAML Configuration API, ${project.version}</doctitle>
         </configuration>
       </plugin>
       <plugin>

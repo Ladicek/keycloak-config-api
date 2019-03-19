@@ -1,0 +1,12 @@
+{
+  "server": {
+    "host": "localhost",
+    "port": 9990,
+    "user": "admin",
+    "pass": "passWord123"
+  },
+  "module": "org.wildfly.swarm.configuration.keycloak.client.saml",
+  "generatorTargets": [
+      "/subsystem=keycloak-saml"
+  ]
+}
